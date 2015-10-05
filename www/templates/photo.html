@@ -1,0 +1,26 @@
+<ion-view title="Voce" ng-init="">
+    <ion-content>
+        <div class="row" ng-repeat="image in images" ng-if="$index % 4 === 0">
+            <div class="col col-25 centerAlign" ng-if="$index < images.length">
+                <img class='roundFrame' ng-src="data:image/jpeg;base64,{{images[$index].image}}" width="100%" ng-click="showImages($index)"/>
+            </div>
+            <div class="col col-25 centerAlign" ng-if="$index + 1 < images.length">
+                <img class='roundFrame' ng-src="data:image/jpeg;base64,{{images[$index + 1].image}}" width="100%" ng-click="showImages($index)"/>
+            </div>
+            <div class="col col-25 centerAlign" ng-if="$index + 2 < images.length">
+                <img class='roundFrame' ng-src="data:image/jpeg;base64,{{images[$index + 2].image}}" width="100%" ng-click="showImages($index)"/>
+            </div>
+            <div class="col col-25 centerAlign" ng-if="$index + 3 < images.length">
+                <img class='roundFrame' ng-src="data:image/jpeg;base64,{{images[$index + 3].image}}" width="100%" ng-click="showImages($index)"/>
+            </div>
+        </div>
+    </ion-content>
+    <div class="tabs tabs-icon-only">
+        <a class="tab-item">
+            <i class="icon ion-camera" ng-click="takePicture()"></i>
+        </a>
+        <a class="tab-item">
+            <i class="icon ion-images" ng-click="choosePicture()"></i>
+        </a>
+    </div>
+</ion-view>

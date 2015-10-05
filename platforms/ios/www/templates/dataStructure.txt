@@ -1,0 +1,7 @@
+{
+	"images": {
+		'unique_images_ids': {
+			"image": ''
+		}
+	}
+}

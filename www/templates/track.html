@@ -1,0 +1,9 @@
+<ion-view title="Track" ng-init="">
+    <ion-content>
+        <div class="row" ng-repeat="image in images">
+            <div class="col col-25" ng-if="$index < images.length">
+                <img class='roundFrame' ng-src="data:image/jpeg;base64,{{images[$index].image}}" width="100%" ng-click="showImages($index)"/>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

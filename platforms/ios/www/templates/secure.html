@@ -1,0 +1,11 @@
+<ion-view title="Home" hide-back-button="true">
+    <ion-content>
+        <div class="row row-increased-margin" ng-repeat="rows in homeIcons">
+            <div class="col col-50 centerAlign" ng-repeat="cols in rows">
+            	<div class="round-button" ng-click="navigateTo(cols.id)" ng-class="rowClass(cols.id)">
+            		<label href="#" class="round-button" >{{cols.value}}</label>
+            	</div>
+            </div>
+ 		</div>    
+    </ion-content>
+</ion-view>

@@ -1,0 +1,22 @@
+<ion-view title="Voce" hide-nav-bar="true">
+	<ion-content class="firebase">
+		<div class="login">
+			<div class="loginContent">
+				<div class="list list-inset">
+					<label class="item item-input">
+						<input ng-model="username" type="Email" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Username">
+					</label>
+					<label class="item item-input">
+						<input ng-model="password" type="password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Password">
+					</label>
+				</div>
+				<div class="padding-left padding-right">
+					<div class="button-bar">
+						<a class="button button-clear button-balanced" ng-click="login(username, password)">Login</a>
+						<a class="button button-clear button-calm" ng-click="register(username, password)">Register</a>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

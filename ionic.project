@@ -1,0 +1,8 @@
+{
+    "name": "Voce",
+    "app_id": "",
+    "proxies": [{
+        "path": "/api",
+        "proxyUrl": "http://localhost:3000/"
+    }]
+}
